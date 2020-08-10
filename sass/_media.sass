@@ -1,0 +1,38 @@
+//Адаптив для больших экранов, до мобильной версии сайта
+//@media (min-width: 992px)
+//Адаптив для планшетов
+@media (max-width: 1200px)
+  .container
+    max-width: 900px
+@media ( max-width: 991px)
+  .container
+    max-width: 691px
+//Адаптив для мобильной версии
+@media ( max-width: 768px)
+  .container
+    width: 85%
+  body
+    padding-top: 64px
+  .header
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+  .menu
+    display: none
+  .shape
+    &__button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+
+
+
+//@media (max-width: 576px)
+///Адаптив для горизонтальной ориентации экрана
+//@media screen and (max-height: 530px)
+//@media (max-width: 480px)
