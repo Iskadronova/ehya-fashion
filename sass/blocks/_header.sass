@@ -17,9 +17,16 @@
       line-height: 22px
       text-decoration: none
       color: inherit
-.shape
   &__button
     display: none
+    height: 18px
+    width: 22px
+    background-color: transparent
+    border: none
+    &_line
+      width: 22px
+      height: 2px
+      background-color: #3A4C66
 .logo
   width: 90px
 .menu
@@ -27,6 +34,7 @@
   align-items: center
   justify-content: space-between
   &__button
+    max-width: 150px
     padding: 13px 24px
     margin-left: 40px
     font-style: normal
@@ -38,14 +46,5 @@
     border: 2px solid $secondary
     box-sizing: border-box
     border-radius: 8px
-.shape__button
-  height: 18px
-  width: 22px
-  background-color: transparent
-  border: none
-  &_line
-    width: 22px
-    height: 2px
-    background-color: #3A4C66
 .close
   display: none

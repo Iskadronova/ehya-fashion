@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var menuButton = $(".shape__button");
+  var menuButton = $(".navbar__button");
   menuButton.on("click", function () {
     //console.log("Клик по кнопке меню");
     $(".menu").toggleClass("menu_visible");
