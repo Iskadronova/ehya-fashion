@@ -12,10 +12,55 @@
   padding-left: 107px
   &-content
     display: flex
-    flex-wrap: wrap
+    flex-direction: column
     align-items: flex-start
     max-width: 652px
     min-height: 592px
+    &__title
+      max-width: 474px
+      margin-top: 0
+      margin-bottom: 28px
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 56px
+      line-height: 68px
+      letter-spacing: 0.2px
+    &__text
+      min-width: 652px
+      margin-bottom: 52px
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: #5A7184
+    &__button
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $light
+      background: $primary
+      border-radius: 8px
+      padding: 16px 24px
+      margin-bottom: 48px
+    &__icons
+      display: flex
+    &__link
+      margin-right: 30px
+      text-decoration: none
+      display: flex
+      align-items: center
+      color: $primary
+    &__border
+      border: 0.75px solid $secondary
+      border-radius: 12px
+      padding: 7px
+      margin-right: 8px
+    &__img
+      border: 0.75px dashed $secondary
+      // border-radius: 12px
+      // padding: 7px
 .hashtag
   font-style: normal
   font-weight: 600
@@ -25,3 +70,4 @@
   border-radius: 2000px
   color: $hesh
   padding: 6px 16px
+  margin-bottom: 28px
