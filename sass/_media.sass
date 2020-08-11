@@ -28,14 +28,40 @@
         z-index: 99
   .menu
     display: none
+    position: relative
+    padding: 36px 24px
+    width: 304px
+    height: 324px
+    background-color: $light
+    &_visible
+      display: block
+      position: absolute
+      top: 10px
+      left: 50%
+      transform: translate(-50%, 0)
+    &__button
+      margin: 0
+      width: 100%
+  .close
+    &_visible
+      display: block
+      position: absolute
+      right: 16px
+      top: 12px
+      border: none
+      background-color: transparent
   .shape
     &__button
       display: flex
       align-items: center
       justify-content: space-between
       flex-direction: column
-
-
+  .navbar
+    &-menu
+      flex-direction: column
+      // width: 322px
+      &__li
+        margin-bottom: 20px
 
 //@media (max-width: 576px)
 ///Адаптив для горизонтальной ориентации экрана
