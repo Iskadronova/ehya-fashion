@@ -29,11 +29,37 @@
     background-position: 300px -377px
   // .hero
   //   max-width: 1040px
+  .collection
+    &-content
+      width: 42%
+      &__title
+        margin-top: 0
+  .collection
+    &-imgs
+      &__block
+        margin-right: 38px
 @media ( max-width: 991px)
   .container
     max-width: 691px
   .hero
     background-position: 150px -377px
+  .collection
+    &-container
+      flex-wrap: wrap
+      margin-bottom: 80px
+    &-imgs
+      margin: auto
+      &__block
+        margin-right: 0
+    &-content
+      width: 100%
+      &__title
+        margin-top: 40px
+        margin-bottom: 18px
+      &__text
+        margin-right: 0
+        max-width: 100%
+        margin-bottom: 30px
 //Адаптив для мобильной версии
 @media ( max-width: 768px)
   body
@@ -102,6 +128,10 @@
         margin-right: 20px
   .hashtag
     margin-bottom: 24px
+  .collection
+    &-container
+      width: 90%
+      max-width: 672px
 @media (max-width: 576px)
   body
     margin-top: 88px
@@ -148,7 +178,52 @@
         line-height: 20px
         margin-bottom: 16px
         justify-content: center
+  .collection
+    &-container
+      margin-bottom: 64px
+    &-imgs
+      margin: auto
+      flex-wrap: wrap
+      &__block
+        margin-right: 0
+        display: flex
+        flex-wrap: nowrap
+        margin-bottom: 36px
+        width: 100%
+        &-img
+          width: 100%
+          height: 150px
+        &-mb
+          margin-bottom: 0
+          margin-right: 14px
+      &__img
+        margin-right: 0
+        margin-bottom: 14px
+        width: 100%
+        height: 300px
+    &-content
+      width: 100%
+      display: flex
+      flex-direction: column
+      &__title
+        margin-top: 0px
+        margin-bottom: 16px
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+      &__text
+        margin-right: 0
+        margin-bottom: 24px
+        max-width: 100%
+        margin-bottom: 30px
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+      &__arrow
+        margin-left: 30px
 ///Адаптив для горизонтальной ориентации экрана
 //@media screen and (max-height: 530px)
-//@media (max-width: 480px)
-
+@media (max-width: 480px)
+  .collection-imgs__block-img
+    width: 100%
+    height: 97px
