@@ -27,8 +27,6 @@
   .container
     max-width: 900px
     background-position: 300px -377px
-  // .hero
-  //   max-width: 1040px
   .collection
     &-content
       width: 42%
@@ -38,6 +36,11 @@
     &-imgs
       &__block
         margin-right: 38px
+  .trending
+    &-card
+      width: 200px
+      &__img
+        height: 269px
 @media ( max-width: 991px)
   .container
     max-width: 691px
@@ -60,6 +63,18 @@
         margin-right: 0
         max-width: 100%
         margin-bottom: 30px
+  .trending
+    margin-bottom: 80px
+    &__wrapper
+      flex-direction: column
+      margin-bottom: 56px
+    &__title
+      margin-bottom: 28px
+    &-card
+      width: 280px
+      margin-bottom: 48px
+      &__img
+        height: 350px
 //Адаптив для мобильной версии
 @media ( max-width: 768px)
   body
@@ -132,6 +147,17 @@
     &-container
       width: 90%
       max-width: 672px
+  .trending
+    &__wrapper
+      flex-direction: column
+      margin-bottom: 56px
+    &__title
+      margin-bottom: 28px
+    &-card
+      width: 230px
+      margin-bottom: 48px
+      &__img
+        height: 330px
 @media (max-width: 576px)
   body
     margin-top: 88px
@@ -227,9 +253,39 @@
         text-align: center
       &__arrow
         margin-left: 30px
-///Адаптив для горизонтальной ориентации экрана
-//@media screen and (max-height: 530px)
+  .trending
+    &__wrapper
+      margin-bottom: 36px
+    &__title
+      margin-bottom: 24px
+    &-category
+      &__link
+        font-size: 16px
+        line-height: 22px
+    &-card
+      margin-bottom: 20px
+      width: 200px
+      &__img
+        height: 264px
+        margin-bottom: 13px
+      &__title
+        font-size: 16px
+        line-height: 20px
+    &-purchase
+      padding: 0
+      justify-content: flex-start
+      &__price
+        font-size: 14px
+        line-height: 24px
+        margin-right: 9px
 @media (max-width: 480px)
   .collection-imgs__block-img
     width: 100%
     height: 97px
+  .trending
+    &-card
+      width: 140px
+      &__img
+        height: 170px
+///Адаптив для горизонтальной ориентации экрана
+//@media screen and (max-height: 530px)
