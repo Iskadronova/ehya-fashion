@@ -113,11 +113,26 @@
     </div>
     <!-- /.container-hero -->
     <div class="collection">
-      <div class="container">
+      <div class="container collection-container">
         <div class="collection-imgs">
-          <img src="/img/collection/collection-1.png" alt="Photo: collection" />
-          <img src="/img/collection/collection-2.png" alt="Photo: collection" />
-          <img src="/img/collection/collection-3.png" alt="Photo: collection" />
+          <img
+            src="/img/collection/collection-1.png"
+            alt="Photo: collection"
+            class="collection-imgs__img"
+          />
+          <div class="collection-imgs__block">
+            <img
+              src="/img/collection/collection-2.png"
+              alt="Photo: collection"
+              class="collection-imgs__block-img"
+            />
+            <img
+              src="/img/collection/collection-3.png"
+              alt="Photo: collection"
+              class="collection-imgs__block-img"
+            />
+          </div>
+          <!-- /.collection-img__block -->
         </div>
         <!-- /.collection__imgs -->
         <div class="collection-content">
@@ -128,9 +143,13 @@
             click See More button on below. Let’s buy Our Collection before all
             they’re gone. Use EHYA20 to get 20% Disc.</span
           >
-          <a href="#"
+          <a href="#" class="collection-content__link"
             >Check Our Collection
-            <img src="/img/collection/arrow.svg" alt="Icon: Arrow" />
+            <img
+              class="collection-content__arrow"
+              src="/img/collection/arrow.svg"
+              alt="Icon: Arrow"
+            />
           </a>
         </div>
         <!-- /.collection__content -->
