@@ -31,8 +31,8 @@ $(document).ready(function () {
     // console.log(activeContent);
   });
 
-  //Слайдер
-  var mySwiper = new Swiper(".swiper-container", {
+  //Слайдер c рекомендациями
+  var mySwiper = new Swiper(".testimonial-container", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -53,6 +53,19 @@ $(document).ready(function () {
           this.autoplay.start();
         });
       },
+    },
+  });
+
+  //Слайдер с историями
+  var mySwiper = new Swiper(".story-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".story-container__button-next",
+      prevEl: ".story-container__button-prev",
     },
   });
 });
