@@ -30,4 +30,29 @@ $(document).ready(function () {
     $(this).addClass("trending-category__link--active");
     // console.log(activeContent);
   });
+
+  //Слайдер
+  var mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 7000,
+    },
+    on: {
+      init() {
+        this.el.addEventListener("mouseenter", () => {
+          this.autoplay.stop();
+        });
+
+        this.el.addEventListener("mouseleave", () => {
+          this.autoplay.start();
+        });
+      },
+    },
+  });
 });
