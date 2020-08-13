@@ -160,18 +160,18 @@
           <h3 class="trending__title title">Trending Items</h3>
           <div class="trending-category">
             <a
-              href="#"
-              class="trending-category__link trending-category__link_active"
+              data-target=".new"
+              class="trending-category__link trending-category__link--active"
               >New Arrival</a
             >
-            <a href="#" class="trending-category__link">Best Sellers</a>
-            <a href="#" class="trending-category__link">Upcoming</a>
+            <a data-target=".best" class="trending-category__link">Best Sellers</a>
+            <a data-target=".upcoming" class="trending-category__link">Upcoming</a>
           </div>
           <!-- /.category -->
         </div>
         <!-- /.trending__wrapper -->
         <div class="trending__cards">
-          <div class="trending-card">
+          <div class="trending-card trending-card--visible new upcoming">
             <img class="trending-card__img" src="img/trending/card-1.png" alt="Minimalist Style" />
             <h4 class="trending-card__title">Minimalist Style</h4>
             <div class="trending-purchase">
@@ -186,7 +186,7 @@
             <!-- /.purchase -->
           </div>
           <!-- /.trending__card -->
-          <div class="trending-card">
+          <div class="trending-card trending-card--visible new best">
             <img class="trending-card__img" src="img/trending/card-2.png" alt="Luxury Gown" />
             <h4 class="trending-card__title">Luxury Gown</h4>
             <div class="trending-purchase">
@@ -201,7 +201,7 @@
             <!-- /.purchase -->
           </div>
           <!-- /.trending__card -->
-          <div class="trending-card">
+          <div class="trending-card trending-card--visible new upcoming">
             <img
               class="trending-card__img"
               src="img/trending/card-3.png"
@@ -220,7 +220,7 @@
             <!-- /.purchase -->
           </div>
           <!-- /.trending__card -->
-          <div class="trending-card">
+          <div class="trending-card trending-card--visible new best">
             <img
               class="trending-card__img"
               src="img/trending/card-4.png"
@@ -239,7 +239,7 @@
             <!-- /.purchase -->
           </div>
           <!-- /.trending__card -->
-          <div class="trending-card">
+          <div class="trending-card trending-card--visible new best">
             <img
               class="trending-card__img"
               src="img/trending/card-5.png"
@@ -258,7 +258,7 @@
             <!-- /.purchase -->
           </div>
           <!-- /.trending__card -->
-          <div class="trending-card">
+          <div class="trending-card trending-card--visible new upcoming">
             <img
               class="trending-card__img"
               src="img/trending/card-6.png"
@@ -277,7 +277,7 @@
             <!-- /.purchase -->
           </div>
           <!-- /.trending__card -->
-          <div class="trending-card">
+          <div class="trending-card trending-card--visible new">
             <img
               class="trending-card__img"
               src="img/trending/card-7.png"
@@ -296,7 +296,7 @@
             <!-- /.purchase -->
           </div>
           <!-- /.trending__card -->
-          <div class="trending-card">
+          <div class="trending-card trending-card--visible new best upcoming">
             <div class="trending-card__img">
               <a href="#" class="trending-card__text">
               <img class="trending-card__plus" src="img/trending/plus.svg" alt="Icon: Plus">

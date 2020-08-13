@@ -18,17 +18,20 @@
       line-height: 25px
       color: #5A7184
       text-decoration: none
-      &_active
+      &--active
         font-weight: bold
   &__cards
     display: flex
     justify-content: space-between
     flex-wrap: wrap
   &-card
+    display: none
     width: 260px
-    display: flex
+    // display: flex
     flex-direction: column
     margin-bottom: 50px
+    &--visible
+      display: flex
     &__img
       width: 100%
       height: 350px
