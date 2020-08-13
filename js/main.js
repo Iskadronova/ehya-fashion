@@ -61,7 +61,8 @@ $(document).ready(function () {
     // Optional parameters
     direction: "horizontal",
     loop: true,
-
+    spaceBetween: 18,
+    slidesPerView: 2,
     // Navigation arrows
     navigation: {
       nextEl: ".story-container__button-next",
