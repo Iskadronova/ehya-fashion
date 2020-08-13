@@ -75,6 +75,9 @@
       margin-bottom: 48px
       &__img
         height: 350px
+  .swiper
+    &-container
+      width: 100%
 //Адаптив для мобильной версии
 @media ( max-width: 768px)
   body
@@ -158,6 +161,15 @@
       margin-bottom: 48px
       &__img
         height: 330px
+  .swiper
+    &-container
+      padding: 10px 0 41px 0
+      width: 100%
+    &-slide
+      &__img
+        margin-bottom: 22px
+      &__comment
+        margin-bottom: 36px
 @media (max-width: 576px)
   body
     margin-top: 88px
@@ -282,6 +294,21 @@
         font-size: 14px
         line-height: 24px
         margin-right: 9px
+  .testimonial
+    margin-bottom: 48px
+  .swiper
+    &-container
+      padding: 10px 0 29px 0
+    &-slide
+      &__img
+        width: 70px
+        height: 60px
+        margin-bottom: 23px
+      &__comment
+        font-size: 18px
+        line-height: 36px
+        letter-spacing: 0.12px
+        margin-bottom: 24px
 @media (max-width: 480px)
   .collection-imgs__block-img
     width: 100%
