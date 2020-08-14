@@ -188,6 +188,8 @@
     &__wrapper
       flex-direction: column
       margin-bottom: 56px
+    &__cards
+      justify-content: space-around
     &__title
       margin-bottom: 28px
     &-card
@@ -321,7 +323,6 @@
       margin-bottom: 36px
     &__title
       margin-bottom: 24px
-    &-category
       &__link
         font-size: 16px
         line-height: 22px
@@ -369,5 +370,13 @@
       width: 140px
       &__img
         height: 170px
+  .trending
+    &-container
+      width: 100%
+    &-category
+      flex-direction: column
+      align-items: center
+      &__link
+        margin-bottom: 8px
 ///Адаптив для горизонтальной ориентации экрана
 //@media screen and (max-height: 530px)
