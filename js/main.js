@@ -60,11 +60,24 @@ $(document).ready(function () {
   var mySwiper = new Swiper(".story-container", {
     // Optional parameters
     direction: "horizontal",
+    updateOnWindowResize: true,
     loop: true,
     initialSlide: 1,
     spaceBetween: 18,
     slidesPerView: 2,
     slidesPerGroup: 2,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        // direction: "vertical",
+        spaceBetween: 24,
+        // autoHeight: true,
+      },
+      768: {
+        direction: "horizontal",
+        spaceBetween: 24,
+      },
+    },
     // Navigation arrows
     navigation: {
       nextEl: ".story-button__next",
