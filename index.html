@@ -500,6 +500,42 @@
       <!-- /.container -->
     </div>
     <!-- /.stories -->
+    <section class="newsletter">
+      <div class="newsletter-wrapper container">
+        <div class="newsletter-text">
+          <h3 class="title newsletter-title newsletter__title">
+            Join Our Newsletter
+          </h3>
+          <span class="newsletter-title__strong"
+            >Just insert your email into the field below. And you will get the
+            updates about fashion & styles from us.</span
+          >
+        </div>
+        <!-- /.newsletter-text -->
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe mail-newsletter"
+        >
+          <div class="subscribe__input-group">
+            <img
+              class="subscribe__icon"
+              src="img/newsletter/email.svg"
+              alt="Icon: Email"
+            />
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your&nbsp;Email"
+              name="email"
+              required
+            />
+          </div>
+          <button class="subscribe__button">Subscribe</button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </section>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
