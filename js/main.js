@@ -87,4 +87,15 @@ $(document).ready(function () {
       enabled: true,
     },
   });
+
+  //Обработка новостной рассылки
+  $(".mail-newsletter").validate({
+    errorClass: "error",
+    messages: {
+      email: {
+        required: "Please enter your email address",
+        email: "Email must be in the format name@domain.com",
+      },
+    },
+  });
 });
