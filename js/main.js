@@ -65,8 +65,8 @@ $(document).ready(function () {
     slidesPerView: 2,
     // Navigation arrows
     navigation: {
-      nextEl: ".story-container__button-next",
-      prevEl: ".story-container__button-prev",
+      nextEl: ".story-button__next",
+      prevEl: ".story-button__prev",
     },
   });
 });
