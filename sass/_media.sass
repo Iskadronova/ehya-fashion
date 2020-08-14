@@ -48,6 +48,14 @@
     &-slide
       &__text
         width: 260px
+  .newsletter
+    &-wrapper
+      padding-left: 0
+      padding-right: 0
+    &-text
+      max-width: 440px
+  .subscribe
+    width: 400px
 @media ( max-width: 991px)
   .container
     max-width: 691px
@@ -112,6 +120,22 @@
       &__text
         width: 312px
         padding-right: 42px
+  .newsletter
+    height: 402px
+    &-text
+      max-width: 486px
+    &-wrapper
+      padding-top: 72px
+      padding-bottom: 80px
+      flex-direction: column
+    &-title
+      text-align: center
+      &__strong
+        display: flex
+        margin-bottom: 56px
+        text-align: center
+  .subscribe
+    width: 449px
 //Адаптив для мобильной версии
 @media ( max-width: 768px)
   body
@@ -359,8 +383,39 @@
         margin-bottom: 24px
   .story-container
     flex-direction: column
-    
-
+  .newsletter
+    height: 414px
+    &-wrapper
+      padding-top: 64px
+      padding-bottom: 64px
+    &-text
+      max-width: 280px
+    &-title
+      margin-bottom: 24px
+      &__strong
+        font-size: 16px
+        line-height: 28px
+        color: #FAFAFB
+        margin-bottom: 36px
+  .subscribe
+    width: 282px
+    min-height: 50px
+    margin-bottom: 10px
+    &__input
+      padding-right: 20px
+      &-group
+        display: flex
+    &__button
+      width: 280px
+      height: 48px
+      border-radius: 8px
+      right: 0
+      top: 0
+      &_form
+        display: none
+      &_mobile
+        position: relative
+        display: block
 @media (max-width: 480px)
   .collection-imgs__block-img
     width: 100%
