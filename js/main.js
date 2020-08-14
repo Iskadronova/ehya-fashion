@@ -61,12 +61,17 @@ $(document).ready(function () {
     // Optional parameters
     direction: "horizontal",
     loop: true,
+    initialSlide: 1,
     spaceBetween: 18,
     slidesPerView: 2,
+    slidesPerGroup: 2,
     // Navigation arrows
     navigation: {
       nextEl: ".story-button__next",
       prevEl: ".story-button__prev",
+    },
+    keyboard: {
+      enabled: true,
     },
   });
 });
