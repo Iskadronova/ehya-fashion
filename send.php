@@ -7,12 +7,12 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $email = $_POST['email'];
 
-    // Формирование письма с рассылкой
-    $title = "Рассылка Best Tour Plan";
-    $body = "
-    <h2>Новостная рассылка Best Tour Plan</h2>
-    <b>Сообщение:</b><br> Мы рады видеть Вас в числе наших подписчиков!<br>
-    К рассылке подключен <b>Ваш почтовый ящик:</b>$email";
+// Формирование письма с рассылкой
+$title = "Рассылка EHYA - Fashion";
+$body = "
+<h2>Новостная рассылка EHYA - Fashion</h2>
+<b>Сообщение:</b><br> Мы рады видеть Вас в числе наших подписчиков!<br>
+К рассылке подключен <b>Ваш почтовый ящик:</b>$email";
 
 
 // Настройки PHPMailer
@@ -32,18 +32,18 @@ try {
     $mail->Port       = 465;
     $mail->setFrom('iskadronovas@gmail.com', 'Светлана Искадронова'); // Адрес самой почты и имя отправителя
     
+    //Получатель письма
+    $mail->addAddress('Candy__88@mail.ru');
+    $mail->addAddress($email);
     
-        $mail->addAddress('Candy__88@mail.ru');
-        $mail->addAddress($email);
-    
-    // Отправка сообщения
-    $mail->isHTML(true);
-    $mail->Subject = $title;
-    $mail->Body = $body;    
+// Отправка сообщения
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body;    
 
-    // Проверяем отравленность сообщения
-    if ($mail->send()) {$result = "success";} 
-    else {$result = "error";}
+// Проверяем отравленность сообщения
+if ($mail->send()) {$result = "success";} 
+else {$result = "error";}
 
 } catch (Exception $e) {
     $result = "error";
@@ -51,4 +51,4 @@ try {
 }
 
 // Отображение результата
-header('Location: newsletter.html');}
+header('Location: newsletter.html');
