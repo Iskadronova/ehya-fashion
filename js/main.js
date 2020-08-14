@@ -57,7 +57,7 @@ $(document).ready(function () {
   });
 
   //Слайдер с историями
-  var mySwiper = new Swiper(".story-container", {
+  var slider = new Swiper(".story-container", {
     // Optional parameters
     direction: "horizontal",
     updateOnWindowResize: true,
