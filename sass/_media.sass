@@ -56,6 +56,12 @@
       max-width: 440px
   .subscribe
     width: 400px
+  .footer
+    &-website
+      min-width: 180px
+    &-menu
+      &__list
+        width: 140px
 @media ( max-width: 991px)
   .container
     max-width: 691px
@@ -136,6 +142,21 @@
         text-align: center
   .subscribe
     width: 449px
+  .footer
+    padding-bottom: 64px
+    padding-top: 64px
+    &-top
+      margin-bottom: 14px
+    &-website
+      min-width: 253px
+      margin-right: 30px
+    &-menu
+      flex-wrap: wrap
+      &__list
+        width: 165px
+        margin-right: 28px
+        margin-bottom: 24px
+
 //Адаптив для мобильной версии
 @media ( max-width: 768px)
   body
@@ -243,6 +264,34 @@
         width: 240px
       &__text
         width: 240px
+  .footer
+    &-website
+      min-width: 180px
+    &-menu
+      &__list
+        width: 140px
+@media (max-width: 661px)
+  .footer
+    padding-top: 48px
+    &-top
+      flex-wrap: wrap
+      margin-bottom: 0
+    &-website
+      margin-right: 0
+      order: 1
+      width: 100%
+      align-items: center
+      &__logo
+        margin-bottom: 14px
+      &__text
+        margin-bottom: 16px
+        text-align: center
+    &-bottom
+      display: none
+    &-menu
+      &__list
+        margin-right: 31px
+        width: 165px
 
 @media (max-width: 576px)
   body
@@ -433,5 +482,26 @@
       align-items: center
       &__link
         margin-bottom: 8px
+  .footer
+    &-website
+      &__logo
+        margin-bottom: 16px
+      &__text
+        width: 263px
+        font-size: 14px
+        line-height: 24px
+    &-menu
+      &__list
+        width: 113px
+        &:nth-last-child(odd)
+          margin-right: 0
+      &__title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+      &__item
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 15px
 ///Адаптив для горизонтальной ориентации экрана
 //@media screen and (max-height: 530px)

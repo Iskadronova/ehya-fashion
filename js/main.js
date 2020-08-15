@@ -69,12 +69,12 @@ $(document).ready(function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        // direction: "vertical",
+        // slidesPerView: 1,
+        // slidesPerColumn: 2,
         spaceBetween: 24,
         // autoHeight: true,
       },
       768: {
-        direction: "horizontal",
         spaceBetween: 24,
       },
     },
