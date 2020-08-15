@@ -540,8 +540,8 @@
   .trending
     &__cards
       justify-content: center
-      padding-left: 15px
-      padding-right: 15px
+      // padding-left: 15px
+      // padding-right: 15px
     &-card
       max-width: 150px
       min-width: 140px
@@ -562,6 +562,10 @@
         margin-bottom: 8px
         font-size: 16px
         line-height: 22px
-
+@media (min-width: 470px) and (max-width: 480px)
+  .trending
+    &__cards
+      padding-left: 15px
+      padding-right: 15px
 ///Адаптив для горизонтальной ориентации экрана
 //@media screen and (max-height: 530px)
