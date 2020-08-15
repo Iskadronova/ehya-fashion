@@ -61,23 +61,7 @@ $(document).ready(function () {
     // Optional parameters
     direction: "horizontal",
     updateOnWindowResize: true,
-    loop: true,
-    initialSlide: 1,
-    spaceBetween: 18,
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        // slidesPerView: 1,
-        // slidesPerColumn: 2,
-        spaceBetween: 24,
-        // autoHeight: true,
-      },
-      768: {
-        spaceBetween: 24,
-      },
-    },
+
     // Navigation arrows
     navigation: {
       nextEl: ".story-button__next",

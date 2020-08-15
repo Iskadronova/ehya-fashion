@@ -32,7 +32,6 @@
       width: 42%
       &__title
         margin-top: 0
-  .collection
     &-imgs
       &__block
         margin-right: 38px
@@ -47,7 +46,9 @@
       margin-right: 50px
     &-slide
       &__text
-        width: 260px
+        width: 250px
+      &__img
+        width: 250px
   .newsletter
     &-wrapper
       padding-left: 0
@@ -62,7 +63,7 @@
     &-menu
       &__list
         width: 140px
-@media ( max-width: 991px)
+@media (max-width: 991px)
   .container
     max-width: 691px
   .hero
@@ -122,9 +123,20 @@
       left: 50%
       margin-left: -67px
       width: 134px
+    &-wrapper
+      width: 662px
+    &-slides
+      display: flex
+      justify-content: space-between
     &-slide
+      position: relative
+      // width: 300px
+      // height: 475px
+      &__img
+        width: 322px
+        height: 317px
       &__text
-        width: 312px
+        width: 322px
         padding-right: 42px
   .newsletter
     height: 402px
@@ -157,7 +169,7 @@
         margin-right: 28px
         margin-bottom: 24px
 //Адаптив для мобильной версии
-@media ( max-width: 768px)
+@media (max-width: 768px)
   body
     margin-top: 102px
   .container
@@ -253,22 +265,31 @@
   .stories
     &__container
       width: 95%
-      height: 839px
   .story
     &-wrapper
       width: 500px
     &-slide
-      width: 250px
-      &__img
-        width: 240px
-      &__text
-        width: 240px
+      margin-right: 18px
+      // width: 250px
+      // &__img
+      //   width: 240px
+      // &__text
+      //   width: 240px
   .footer
     &-website
       min-width: 180px
     &-menu
       &__list
         width: 140px
+@media (max-width: 678px)
+  .story
+    &-slide
+      &__img
+        width: 270px
+        height: 277px
+      &__text
+        width: 270px
+        top: 270px
 @media (max-width: 661px)
   .footer
     padding-top: 48px
@@ -428,8 +449,25 @@
         line-height: 36px
         letter-spacing: 0.12px
         margin-bottom: 24px
-  .story-container
-    flex-direction: column
+  .stories
+    margin-bottom: 64px
+  .story
+    &-wrapper
+      width: 280px
+      // height: 840px
+    &-slides
+      flex-direction: column
+    &-slide
+      height: 407px
+      padding-top: 0
+      &:nth-last-child(even)
+        margin-bottom: 24px
+      &__text
+        width: 270px
+        height: 150px
+      &__title
+        font-size: 20px
+        line-height: 24px
   .newsletter
     height: 414px
     &-wrapper
