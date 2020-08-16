@@ -281,8 +281,10 @@
     &-wrapper
       width: 590px
     &-slide
-      margin-right: 18px
+      margin-right: 0px
       width: 332px
+      &:nth-last-child(even)
+        margin-right: 18px
       &__img
         width: 332px
       &__text
@@ -300,6 +302,25 @@
   //       width: 140px
   //       &:nth-last-child(even)
   //         margin-right: 50px
+  .footer
+    padding-top: 48px
+    &-top
+      // margin-bottom: 0
+      // justify-content: center
+      &__logo
+        margin-bottom: 14px
+      &__text
+        margin-bottom: 16px
+        text-align: center
+    &-bottom
+      display: none
+    &-menu
+      &__list
+        margin-right: 0px
+        width: 160px
+        &:nth-last-child(even)
+          margin-right: 30px
+@media (max-width: 744px)
   .footer
     padding-top: 48px
     &-top
