@@ -243,6 +243,7 @@
       width: 90%
       max-width: 672px
   .trending
+    margin-bottom: 20px
     &__wrapper
       flex-direction: column
       margin-bottom: 56px
@@ -251,14 +252,14 @@
     &__title
       margin-bottom: 28px
     &-card
-      width: 230px
+      width: 280px
       margin-bottom: 48px
       &__img
-        height: 330px
-        width: 230px
+        width: 280px
+        height: 350px
   .testimonial
     &-container
-      padding: 10px 0 41px 0
+      padding: 10px 0 55px 0
       width: 100%
     &-slide
       &__img
@@ -266,25 +267,32 @@
       &__comment
         margin-bottom: 36px
   .stories
+    margin-bottom: 90px
     &__container
       width: 95%
   .story
     &-wrapper
-      width: 500px
+      width: 682px
     &-slide
       margin-right: 18px
       // width: 250px
       // &__img
       //   width: 240px
-      // &__text
+      &__text
+        top: 305px
       //   width: 240px
+    &-text
+      margin-bottom: 116px
   .footer
     &-website
-      max-width: 263px
-      min-width: 210px
+      width: 253px
+      // max-width: 263px
+      // min-width: 210px
     &-menu
       &__list
         width: 140px
+        &:nth-last-child(even)
+          margin-right: 50px
 @media (max-width: 678px)
   .story
     &-slide
