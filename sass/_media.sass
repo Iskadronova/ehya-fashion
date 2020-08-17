@@ -583,24 +583,42 @@
     &-title
       margin-bottom: 24px
   .subscribe
-    width: 282px
-    min-height: 50px
+    width: 280px
+    min-height: 106px
     margin-bottom: 10px
+    border: none
+    background-color: inherit
+    padding: 0
+    flex-direction: column
     &__input
+      position: relative
+      height: 48px
+      width: 280px
       padding-right: 20px
+      border-radius: 8px
+      margin-bottom: 10px
+      border-bottom: 2px solid transparent
+      border: 1px solid #C3CAD9
+      overflow: visible
       &-group
-        display: flex
+        position: relative
+    &__icon
+      top: 25px
     &-button
+      position: relative
       width: 280px
       height: 48px
       border-radius: 8px
       right: 0
       top: 0
       &_form
-        display: none
+        // display: none
       &_mobile
         position: relative
         display: block
+  label.error
+    left: 40px
+    bottom: 10px
 @media (max-width: 480px)
   .collection
     &-imgs
