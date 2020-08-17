@@ -493,6 +493,11 @@
     &-card
       margin-bottom: 20px
       width: 200px
+      &__text
+        font-size: 20px
+        line-height: 24px
+      &__plus
+        margin-top: 40px
       &__img
         height: 264px
         width: 200px
@@ -607,12 +612,13 @@
     margin-bottom: 20px
     &__cards
       justify-content: center
-      // padding-left: 15px
-      // padding-right: 15px
+      padding-left: 15px
+      padding-right: 15px
     &-card
-      max-width: 150px
+      max-width: 151px
       min-width: 140px
       margin-bottom: 21px
+      align-items: center
       // margin-right: 10px
       // &:nth-last-child(odd)
       //   margin-right: 0
@@ -689,5 +695,8 @@
     &__cards
       padding-left: 15px
       padding-right: 15px
+@media (max-width: 333px)
+  .trending__cards
+    padding: 0
 ///Адаптив для горизонтальной ориентации экрана
 //@media screen and (max-height: 530px)
